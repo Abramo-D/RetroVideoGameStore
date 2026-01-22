@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RetroVideoGameStore.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace RetroVideoGameStore.Controllers
 {
@@ -29,5 +30,11 @@ namespace RetroVideoGameStore.Controllers
             return View();
 
         }
+        public IActionResult AddCategory()
+        {
+            //display a form for the user to add a new catagory
+            return View();
+        }
+
     }
 }
